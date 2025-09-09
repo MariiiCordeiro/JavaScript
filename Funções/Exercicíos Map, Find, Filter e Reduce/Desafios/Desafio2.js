@@ -13,7 +13,7 @@ const carrinho = [
     { produto: "Teclado", preco: 200 }
   ]
 
-  const lista = carrinho.map(produtos => ` Produto: ${carrinho.produto} -  R$ ${carrinho.preco} `)
+  const lista = carrinho.map(produtos => `Produto: ${produtos.produto} -  R$ ${produtos.preco} `)
   console.log(lista)
 
   const totalCompra = carrinho.reduce((total,carrinho)=> total + carrinho.preco,0)
