@@ -12,5 +12,5 @@ valorCompra = parseFloat(valorCompra)
 if (valorCompra > 100) {
     console.log("A sua compra tera um desconto de: R$" + valorCompra * 0.1 + "Valor a pagar: R$" + valorCompra * 0.9)
 }else{
-    console.log("Valor negado")
+    console.log("Nenhum desconto disponível. Valor a pagar: R$" + valorCompra)
 }

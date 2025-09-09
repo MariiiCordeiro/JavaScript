@@ -6,4 +6,6 @@ Descrição: Dado o array const palavras = ["JS", "é", "muito", "legal"];, usa-
 */
 
 const palavras = ["JS", "é", "muito", "legal"]
-const frase = palavras.reduce((acumulador, frase))
+const frase = palavras.reduce((acumulador, frase)=> acumulador + " " + frase)
+ 
+console.log(frase)

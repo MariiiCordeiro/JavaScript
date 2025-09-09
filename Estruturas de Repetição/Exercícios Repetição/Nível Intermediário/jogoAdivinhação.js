@@ -6,21 +6,20 @@ Descrição: Um número aleatório é gerado de 1 a 100. O usuário deve adivinh
 Enquanto ele não acertar será informado se o número sugerido pelo usuário é menor ou maior do que o número gerado.
 */
 
-let numeroSecreto = Math.random() * 100;
+let numeroSecreto = (Math.random() * 100)+1;
 numeroSecreto = parseInt(numeroSecreto);
 
 let numeroUsuario = prompt("Digite o número: ");
 numeroUsuario= parseInt(numeroUsuario);
 
-while ( numeroSecreto != numeroUsuario){
-    console.log("Número errado!");
-    if (numeroUsuario < numeroSecreto){
+do {
+    numeroUsuario = parseInt(prompt("Digite o número: "));
+    
+    if (numeroUsuario < numeroSecreto) {
         console.log("Número menor que o gerado!");
-    }
-    else if( numeroUsuario > numeroSecreto){
+    } else if (numeroUsuario > numeroSecreto) {
         console.log("Número maior que o gerado!");
-    }
-    else{
+    } else {
         console.log("Você acertou!");
     }
-}
+} while (numeroUsuario != numeroSecreto);

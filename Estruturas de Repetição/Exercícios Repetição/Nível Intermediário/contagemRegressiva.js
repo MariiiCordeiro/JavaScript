@@ -9,6 +9,6 @@ let numero = prompt("Digite um número: ");
 numero = parseInt (numero);
 
 while (numero != 0){
-    numero--;
     console.log(numero);
+    numero--
 }
